@@ -68,9 +68,9 @@ body{
     justify-content: space-between;
     padding: 20px 80px;
     background-color:rgb(225, 187, 149);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 5px 15px rgb(145, 169, 213);
     z-index: 999;
-    position: sticky;/*to make header appear always on top*/
+    position: sticky;
     top: 0;
     left: 0;
 }
