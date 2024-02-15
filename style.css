@@ -44,6 +44,19 @@ p{
     margin: 40px 0;
 }
 
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition:0.2s;
+}
+
 body{
     width: 100%;
 }
@@ -55,9 +68,9 @@ body{
     justify-content: space-between;
     padding: 20px 80px;
     background-color:rgb(225, 187, 149);
-    box-shadow: 0 5px 15px rgb(145, 169, 213);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     z-index: 999;
-    position: sticky;
+    position: sticky;/*to make header appear always on top*/
     top: 0;
     left: 0;
 }
@@ -71,7 +84,7 @@ body{
 #navbar li{
     list-style: none;
     padding: 0 20px;
-    position: relative;
+    position: relative; /**/
 }
 
 #navbar li a{
@@ -84,13 +97,13 @@ body{
 }
 
 #navbar li a:hover,
-#navbar li a.active
+#navbar li a.active /*when we are in index.html page and take cursor on it, that should be highlighted*/
 {
     color: rgb(67, 61, 61);
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after{
+#navbar li a:hover::after{ /*when we are in index.html page and take cursor on it, that should be underlined*/
     content:"" ;
     width: 30%;
     height: 2px;
@@ -121,19 +134,19 @@ body{
 }
 
 #hero h1{
-    color: chocolate;
+    color: rgb(44, 151, 153);
 }
 
 #hero button{
     background-image: url("img/button.png");
     background-color: transparent;
-    color:rgb(51, 47, 47) ;
+    color:rgb(32, 79, 87) ;
     border:0;
-    padding: 14px 80px 14px 65px;
+    padding: 14px 80px 54px 65px;
     background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 #feature
@@ -148,14 +161,14 @@ body{
     width: 180px;
     text-align: center;
     padding: 25px 15px;
-    box-shadow: 10px 10px 10px rgb(178, 165, 165);
+    box-shadow: 2px 2px 2px rgb(178, 165, 165);
     border: 1px solid #bbcbbb;
     border-radius: 4px;
     margin: 15px 0;
 }
 
 #feature .fe-box:hover{
-    box-shadow: 10px 10px 54px rgb(107,108,130);
+    box-shadow: 4px 4px 4px rgb(107,108,130);
 }
 
 #feature .fe-box img{
@@ -165,9 +178,153 @@ body{
 
 #feature .fe-box h6{
     display: inline-block;
-    padding: 9px 8px 6px 8px;
+    padding: 2px 2px 2px 2px;
     line-height: 1;
     border-radius: 4px;
-    color: rgb(31, 223, 159);
-    background-color: rgba(255, 192, 203, 0.601);
+    font-size: 18px;
+    color: rgb(23, 29, 27);
+    background-color: rgba(170, 117, 126, 0.601);
+}
+
+#feature .fe-box:nth-child(2) h6
+{
+    background-color: greenyellow;
+} 
+#feature .fe-box:nth-child(3) h6
+{
+    background-color: rgb(32, 195, 189);
+} 
+#feature .fe-box:nth-child(4) h6
+{
+    background-color: rgb(179, 64, 208);
+} 
+#feature .fe-box:nth-child(5) h6
+{
+    background-color: rgb(215, 93, 178);
+} 
+#feature .fe-box:nth-child(6) h6
+{
+    background-color: rgb(173, 145, 18);
+} 
+
+#product1
+{
+    text-align: center;
+
+}
+
+#product1 .pro-container
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro
+{
+    width: 23%;
+    min-width:250px;
+    padding: 10px 12px;
+    border: 1px solid rgba(151, 143, 143, 0.608);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0px;
+    position: relative;
+}
+
+#product1 .pro:hover
+{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des
+{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: grey;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 10px;
+    color: rgb(204, 204, 85);
+}
+
+#product1 .pro .des h4
+{
+    padding-top: 7px;
+    font-size: 15px;
+    color: rgb(62, 113, 62);
+}
+
+#product1 .pro .cart
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(197, 169, 116);
+    font-weight: 500;
+    color: rgb(21, 201, 174);
+    border:1px solid rgb(211, 167, 167);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/img/banner/b2.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: white;
+    font-size: 40px;
+
+}
+
+#banner h2
+{
+    color: azure;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+
+#banner h2 span
+{
+    color: rgb(220, 63, 105);
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+#banner button:hover
+{
+    
 }
