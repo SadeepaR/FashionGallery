@@ -329,3 +329,68 @@ body{
     background: rgb(83, 151, 224);
     color: rgb(204, 217, 231);
 }
+
+#sm-banner
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sm-banner .banner-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(/img/banner/b17.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#sm-banner .banner-box2
+{
+    background-image: url(/img/banner/b10.jpg);
+}
+
+#sm-banner h4
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2
+{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span
+{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(23, 22, 22);
+    background-color: antiquewhite;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition:0.2s;
+}
+
+#sm-banner .banner-box:hover button
+{
+    background: palegreen;
+    border: 1px solid palegreen;
+}
