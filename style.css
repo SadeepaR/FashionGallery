@@ -441,3 +441,54 @@ button.white{
     font-weight: 800;
     font-size: 15px;
 }
+
+#newsletter
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(/img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: rgb(68, 68, 124);
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: wheat;
+}
+
+#newsletter p{
+    font-size: 14pxs;
+    font-weight: 400;
+    color: wheat;
+}
+
+#newsletter p span{
+    color: rgb(167, 129, 57);
+}
+
+#newsletter .form
+{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+#newsletter button
+{
+    background-color: rgb(62, 99, 99);
+    color: wheat;
+
+}
