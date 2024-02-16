@@ -326,5 +326,6 @@ body{
 
 #banner button:hover
 {
-    
+    background: rgb(83, 151, 224);
+    color: rgb(204, 217, 231);
 }
